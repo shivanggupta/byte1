@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <title>Fusion Byte Tutorial</title>
+    <title>Shivang Gupta | IDS Fall 18 - Byte 1 Project</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +17,25 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/theme.css" rel="stylesheet">
+    
+    <style>
+			
+			table {
+			    font-family: arial, sans-serif;
+			    border-collapse: collapse;
+			    width: 60%;
+			}
+			
+			td, th {
+			    border: 1px solid #dddddd;
+			    text-align: left;
+			    padding: 8px;
+			}
+			
+			tr:nth-child(even) {
+			    background-color: #dddddd;
+			}
+	</style>
   </head>
 
   <body role="document">
@@ -45,18 +64,852 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-	<h1>Data Pipeline Project Fusion Byte Example!!</h1>
-        <p>This is the Fusion Byte of the Data Pipeline class. This
-        page should explain what question you want to answer and use
-        the visualization tools provided by Google Fusion Table to
-        answer it. </p>
+	<h1 style="text-align:center;">What sources of fuel for electricity are popular around the world?</h1>
+        <p style="text-align:center;">A simple visualization to show sources of electricity around the world. Zoom in for a closer look and click on the icons for more details! </p>
       </div>
 
+		<center>
+			<iframe width="700" height="400" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col5%3E%3E0+from+1F_NVQp2NQ0F0hw24R22ZZTrqir9Ir0Cbwe5bhIeQ&amp;viz=MAP&amp;h=false&amp;lat=49.170023439332624&amp;lng=-120.85866565471974&amp;t=1&amp;z=3&amp;l=col5%3E%3E0&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
+   		</center>
+   		<br>
+   		
+   		<div class="row">
+   			<div class="col-md-8 col-md-offset-2">
+   				<h2>Legend</h2>
+   				<h4>Click on Icons in map above for more details.</h4>
 
-<iframe width="500" height="300" scrolling="no" frameborder="no"
-	src="https://www.google.com/fusiontables/embedviz?q=select+col16%3E%3E0+from+1ymz3EtGdi4qKGMl5AxEFXtTlgk3tKi8iCpjTzvM&amp;viz=MAP&amp;h=false&amp;lat=38.071424981566125&amp;lng=-85.15232666015623&amp;t=1&amp;z=9&amp;l=col16%3E%3E0&amp;y=3&amp;tmplt=3&amp;hml=TWO_COL_LAT_LNG"></iframe>
+				<table>
+				  <tr>
+				    <th>Type of Fuel</th>
+				    <th>Icon</th>
+				  </tr>
+				  <tr>
+				    <td>Wind</td>
+				    <td>Mountains</td>
+				  </tr>
+				  <tr>
+				    <td>Oil</td>
+				    <td>Gas Pump</td>
+				  </tr>
+				  <tr>
+				    <td>Hydro</td>
+				    <td>Waves</td>
+				  </tr>
+				  <tr>
+				    <td>Solar</td>
+				    <td>Sun</td>
+				  </tr>
+				  <tr>
+				    <td>Gas</td>
+				    <td>Fire</td>
+				  </tr>
+				  <tr>
+				    <td>Biomass</td>
+				    <td>Cow</td>
+				  </tr>
+				  <tr>
+				    <td>Coal</td>
+				    <td>Volcano</td>
+				  </tr>
+				  <tr>
+				    <td>Nuclear</td>
+				    <td>Wavy Line in Circle (red)</td>
+				  </tr>
+				  <tr>
+				    <td>Waste</td>
+				    <td>Apple and Bottle</td>
+				  </tr>
+				  <tr>
+				    <td>Other</td>
+				    <td>Blue Map Icon</td>
+				  </tr>
+				  
+				</table>
+				
+				<h2>Some Useful Insights From This Dataset</h2>
+					<ul>
+						<li>In Scandinavian countries, wind power is the most common source of fuel.  </li>
+						<li>In Thailand, wind power is the most common source of fuel.  </li>
+						<li>United States ha the maximum number of power plants at over 8119, this contrasts interestingly with China (2901) and India (845) which have much larger populations to support. In fact, France with its relatively    small population has over 2000 power plants</li>
+						<li>Middle Eastern countries largely rely on gas and oil as expected due to their large reserves.</li>
+						<li>The number of wind and solar plants is greater than the number of oil, gas and coal plants. This signals a clear change in policy around the world.</li>
+					</ul>
+				<br/>
+				
+   				<h2>Data Highlights</h2>
 
-      </div> <!-- /page-header -->
+				<table>
+					<tr>
+				    <th>Type of Fuel</th>
+				    <th>Number of Plants</th>
+				  </tr>
+				  <tr>
+				    <td>Wind</td>
+				    <td>5084</td>
+				  </tr>
+				  <tr>
+				    <td>Oil</td>
+				    <td>2925</td>
+				  </tr>
+				  <tr>
+				    <td>Hydro</td>
+				    <td>7034</td>
+				  </tr>
+				  <tr>
+				    <td>Solar</td>
+				    <td>5424</td>
+				  </tr>
+				  <tr>
+				    <td>Gas</td>
+				    <td>3068</td>
+				  </tr>
+				  <tr>
+				    <td>Biomass</td>
+				    <td>1290</td>
+				  </tr>
+				  <tr>
+				    <td>Coal</td>
+				    <td>2172</td>
+				  </tr>
+				  <tr>
+				    <td>Nuclear</td>
+				    <td>199</td>
+				  </tr>
+				  <tr>
+				    <td>Waste</td>
+				    <td>1143</td>
+				  </tr>
+				  <tr>
+				    <td>Other</td>
+				    <td>36</td>
+				  </tr>
+				   <tr>
+				    <td><strong>Total</strong></td>
+				    <td><strong>28375</strong></td>
+				  </tr>
+				</table>
+				<br/>
+				
+				<table>
+					<tr>
+				    <td>Avg. Capacity</td>
+				    <td>185</td>
+				  </tr>
+				  <tr>
+				    <td>Min Capacity</td>
+				    <td>1 (Wind)</td>
+				  </tr>
+				  <tr>
+				    <td>Max Capacity</td>
+				    <td>998 (Oil)</td>
+				  </tr>
+				   <tr>
+				    <td><strong>Total Capacity</strong></td>
+				    <td><strong>5,116,969</strong></td>
+				  </tr>
+				</table>
+   		
+				<br/>
+			
+			<h2> Number of Power Plants Per Country</h2>
+			<center><button class="collapsible btn"> Collapse/Expand Country Table Below</button>
+				<table border=0 cellpadding=0 cellspacing=0 width=367 style='border-collapse:
+ collapse;table-layout:fixed;width:276pt' >
+ <col width=221 style='mso-width-source:userset;mso-width-alt:8082;width:166pt'>
+ <col width=146 style='mso-width-source:userset;mso-width-alt:5339;width:110pt'>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1514536 width=221 style='height:15.0pt;width:166pt;
+  font-size:11.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Calibri, sans-serif;border-top:none;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none;
+  background:#D9E1F2;mso-pattern:#D9E1F2 none'>Country</td>
+  <td class=xl1514536 width=146 style='width:110pt;font-size:11.0pt;color:black;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri, sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #8EA9DB;border-left:none;background:#D9E1F2;
+  mso-pattern:#D9E1F2 none'>Number of Power Plants</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Afghanistan</td>
+  <td class=xl1514536 align=right>7</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Albania</td>
+  <td class=xl1514536 align=right>8</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Algeria</td>
+  <td class=xl1514536 align=right>32</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Angola</td>
+  <td class=xl1514536 align=right>14</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Antarctica</td>
+  <td class=xl1514536 align=right>2</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Argentina</td>
+  <td class=xl1514536 align=right>241</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Armenia</td>
+  <td class=xl1514536 align=right>8</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Australia</td>
+  <td class=xl1514536 align=right>419</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Austria</td>
+  <td class=xl1514536 align=right>103</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Azerbaijan</td>
+  <td class=xl1514536 align=right>14</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Bahrain</td>
+  <td class=xl1514536 align=right>7</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Bangladesh</td>
+  <td class=xl1514536 align=right>55</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Belarus</td>
+  <td class=xl1514536 align=right>17</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Belgium</td>
+  <td class=xl1514536 align=right>66</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Benin</td>
+  <td class=xl1514536 align=right>2</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Bhutan</td>
+  <td class=xl1514536 align=right>5</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Bolivia</td>
+  <td class=xl1514536 align=right>23</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Bosnia and Herzegovina</td>
+  <td class=xl1514536 align=right>20</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Botswana</td>
+  <td class=xl1514536 align=right>2</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Brazil</td>
+  <td class=xl1514536 align=right>2340</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Brunei Darussalam</td>
+  <td class=xl1514536 align=right>4</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Bulgaria</td>
+  <td class=xl1514536 align=right>18</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Burkina Faso</td>
+  <td class=xl1514536 align=right>5</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Burundi</td>
+  <td class=xl1514536 align=right>3</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Cambodia</td>
+  <td class=xl1514536 align=right>12</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Cameroon</td>
+  <td class=xl1514536 align=right>8</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Canada</td>
+  <td class=xl1514536 align=right>1154</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Cape Verde</td>
+  <td class=xl1514536 align=right>3</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Central African Republic</td>
+  <td class=xl1514536 align=right>2</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Chile</td>
+  <td class=xl1514536 align=right>253</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>China</td>
+  <td class=xl1514536 align=right>2901</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Colombia</td>
+  <td class=xl1514536 align=right>21</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Congo</td>
+  <td class=xl1514536 align=right>8</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Costa Rica</td>
+  <td class=xl1514536 align=right>26</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Cote DIvoire</td>
+  <td class=xl1514536 align=right>8</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Croatia</td>
+  <td class=xl1514536 align=right>24</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Cuba</td>
+  <td class=xl1514536 align=right>12</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Cyprus</td>
+  <td class=xl1514536 align=right>3</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Czech Republic</td>
+  <td class=xl1514536 align=right>450</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Democratic Republic of
+  the Congo</td>
+  <td class=xl1514536 align=right>15</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Denmark</td>
+  <td class=xl1514536 align=right>37</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Djibouti</td>
+  <td class=xl1514536 align=right>1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Dominican Republic</td>
+  <td class=xl1514536 align=right>13</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Ecuador</td>
+  <td class=xl1514536 align=right>20</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Egypt</td>
+  <td class=xl1514536 align=right>43</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>El Salvador</td>
+  <td class=xl1514536 align=right>8</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Equatorial Guinea</td>
+  <td class=xl1514536 align=right>3</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Eritrea</td>
+  <td class=xl1514536 align=right>2</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Estonia</td>
+  <td class=xl1514536 align=right>17</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Ethiopia</td>
+  <td class=xl1514536 align=right>13</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Fiji</td>
+  <td class=xl1514536 align=right>12</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Finland</td>
+  <td class=xl1514536 align=right>184</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>France</td>
+  <td class=xl1514536 align=right>2018</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>French Guiana</td>
+  <td class=xl1514536 align=right>5</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Gabon</td>
+  <td class=xl1514536 align=right>6</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Gambia</td>
+  <td class=xl1514536 align=right>2</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Georgia</td>
+  <td class=xl1514536 align=right>19</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Germany</td>
+  <td class=xl1514536 align=right>980</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Ghana</td>
+  <td class=xl1514536 align=right>5</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Greece</td>
+  <td class=xl1514536 align=right>76</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Guatemala</td>
+  <td class=xl1514536 align=right>75</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Guinea</td>
+  <td class=xl1514536 align=right>9</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Guinea-Bissau</td>
+  <td class=xl1514536 align=right>1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Guyana</td>
+  <td class=xl1514536 align=right>5</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Honduras</td>
+  <td class=xl1514536 align=right>31</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Hungary</td>
+  <td class=xl1514536 align=right>12</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Iceland</td>
+  <td class=xl1514536 align=right>20</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>India</td>
+  <td class=xl1514536 align=right>845</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Indonesia</td>
+  <td class=xl1514536 align=right>158</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Iran</td>
+  <td class=xl1514536 align=right>100</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Iraq</td>
+  <td class=xl1514536 align=right>28</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Ireland</td>
+  <td class=xl1514536 align=right>59</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Israel</td>
+  <td class=xl1514536 align=right>38</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Italy</td>
+  <td class=xl1514536 align=right>247</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Jamaica</td>
+  <td class=xl1514536 align=right>9</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Japan</td>
+  <td class=xl1514536 align=right>325</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Jordan</td>
+  <td class=xl1514536 align=right>8</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Kazakhstan</td>
+  <td class=xl1514536 align=right>25</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Kenya</td>
+  <td class=xl1514536 align=right>22</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Kosovo</td>
+  <td class=xl1514536 align=right>2</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Kuwait</td>
+  <td class=xl1514536 align=right>8</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Kyrgyzstan</td>
+  <td class=xl1514536 align=right>8</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Laos</td>
+  <td class=xl1514536 align=right>20</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Latvia</td>
+  <td class=xl1514536 align=right>5</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Lebanon</td>
+  <td class=xl1514536 align=right>7</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Lesotho</td>
+  <td class=xl1514536 align=right>1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Liberia</td>
+  <td class=xl1514536 align=right>2</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Libya</td>
+  <td class=xl1514536 align=right>12</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Lithuania</td>
+  <td class=xl1514536 align=right>6</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Luxembourg</td>
+  <td class=xl1514536 align=right>2</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Macedonia</td>
+  <td class=xl1514536 align=right>12</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Madagascar</td>
+  <td class=xl1514536 align=right>11</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Malawi</td>
+  <td class=xl1514536 align=right>5</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Malaysia</td>
+  <td class=xl1514536 align=right>49</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Mali</td>
+  <td class=xl1514536 align=right>4</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Mauritania</td>
+  <td class=xl1514536 align=right>6</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Mauritius</td>
+  <td class=xl1514536 align=right>18</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Mexico</td>
+  <td class=xl1514536 align=right>251</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Moldova</td>
+  <td class=xl1514536 align=right>6</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Mongolia</td>
+  <td class=xl1514536 align=right>2</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Montenegro</td>
+  <td class=xl1514536 align=right>3</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Morocco</td>
+  <td class=xl1514536 align=right>43</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Mozambique</td>
+  <td class=xl1514536 align=right>3</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Myanmar</td>
+  <td class=xl1514536 align=right>34</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Namibia</td>
+  <td class=xl1514536 align=right>8</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Nepal</td>
+  <td class=xl1514536 align=right>12</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Netherlands</td>
+  <td class=xl1514536 align=right>58</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>New Zealand</td>
+  <td class=xl1514536 align=right>43</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Nicaragua</td>
+  <td class=xl1514536 align=right>15</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Niger</td>
+  <td class=xl1514536 align=right>6</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Nigeria</td>
+  <td class=xl1514536 align=right>12</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>North Korea</td>
+  <td class=xl1514536 align=right>30</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Norway</td>
+  <td class=xl1514536 align=right>306</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Oman</td>
+  <td class=xl1514536 align=right>9</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Pakistan</td>
+  <td class=xl1514536 align=right>57</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Panama</td>
+  <td class=xl1514536 align=right>14</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Papua New Guinea</td>
+  <td class=xl1514536 align=right>15</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Paraguay</td>
+  <td class=xl1514536 align=right>3</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Peru</td>
+  <td class=xl1514536 align=right>30</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Philippines</td>
+  <td class=xl1514536 align=right>98</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Poland</td>
+  <td class=xl1514536 align=right>59</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Portugal</td>
+  <td class=xl1514536 align=right>462</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Qatar</td>
+  <td class=xl1514536 align=right>12</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Romania</td>
+  <td class=xl1514536 align=right>31</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Russia</td>
+  <td class=xl1514536 align=right>157</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Rwanda</td>
+  <td class=xl1514536 align=right>10</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Saudi Arabia</td>
+  <td class=xl1514536 align=right>86</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Senegal</td>
+  <td class=xl1514536 align=right>6</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Serbia</td>
+  <td class=xl1514536 align=right>12</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Sierra Leone</td>
+  <td class=xl1514536 align=right>3</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Singapore</td>
+  <td class=xl1514536 align=right>14</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Slovakia</td>
+  <td class=xl1514536 align=right>28</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Slovenia</td>
+  <td class=xl1514536 align=right>8</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>South Africa</td>
+  <td class=xl1514536 align=right>98</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>South Korea</td>
+  <td class=xl1514536 align=right>124</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Spain</td>
+  <td class=xl1514536 align=right>613</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Sri Lanka</td>
+  <td class=xl1514536 align=right>46</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Sudan</td>
+  <td class=xl1514536 align=right>19</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Swaziland</td>
+  <td class=xl1514536 align=right>6</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Sweden</td>
+  <td class=xl1514536 align=right>167</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Switzerland</td>
+  <td class=xl1514536 align=right>166</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Syrian Arab Republic</td>
+  <td class=xl1514536 align=right>18</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Taiwan</td>
+  <td class=xl1514536 align=right>33</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Tajikistan</td>
+  <td class=xl1514536 align=right>10</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Tanzania</td>
+  <td class=xl1514536 align=right>11</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Thailand</td>
+  <td class=xl1514536 align=right>167</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Togo</td>
+  <td class=xl1514536 align=right>3</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Trinidad and Tobago</td>
+  <td class=xl1514536 align=right>6</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Tunisia</td>
+  <td class=xl1514536 align=right>27</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Turkey</td>
+  <td class=xl1514536 align=right>97</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Turkmenistan</td>
+  <td class=xl1514536 align=right>7</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Uganda</td>
+  <td class=xl1514536 align=right>8</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Ukraine</td>
+  <td class=xl1514536 align=right>31</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>United Arab Emirates</td>
+  <td class=xl1514536 align=right>27</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>United Kingdom</td>
+  <td class=xl1514536 align=right>2567</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>United States of America</td>
+  <td class=xl1514536 align=right>8119</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Uruguay</td>
+  <td class=xl1514536 align=right>73</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Uzbekistan</td>
+  <td class=xl1514536 align=right>15</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Venezuela</td>
+  <td class=xl1514536 align=right>43</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Vietnam</td>
+  <td class=xl1514536 align=right>219</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Western Sahara</td>
+  <td class=xl1514536 align=right>1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Yemen</td>
+  <td class=xl1514536 align=right>7</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Zambia</td>
+  <td class=xl1514536 align=right>14</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6514536 style='height:15.0pt'>Zimbabwe</td>
+  <td class=xl1514536 align=right>2</td>
+ </tr>
+ 
+ 
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=221 style='width:166pt'></td>
+  <td width=146 style='width:110pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+
+
+				</center>
+				
+				
+				
+				
+				
+	   		</div>
+   		</div>
+   		
+   		
+   		<footer class="footer" style="background-color:#f6f6f6;text-align:center;">Copyright &copy; Shivang Gupta 2018</footer>
+   </div> <!-- /page-header -->
     </div> <!-- /container -->
 
 
@@ -66,5 +919,21 @@
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
+    <script type="text/javascript">
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
   </body>
 </html>
